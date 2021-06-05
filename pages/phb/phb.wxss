@@ -1,0 +1,76 @@
+/* pages/phb/phb.wxss */
+.phb{
+    padding: 0 20rpx;
+}
+
+.phbList{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.nav{
+    margin: 20rpx 20rpx;
+    position: relative;
+}
+.nav image{
+    width: 200rpx;
+    height: 200rpx;
+    /* margin: 20rpx 0rpx; */
+    border-radius: 10rpx;
+}
+.gengxin{
+    position: absolute;
+    top: 64%;
+    font-size: 26rpx;
+    color: #fff;
+    margin-left: 10rpx;
+}
+.geng{
+    position: absolute;
+    top: 63%;
+    font-size: 26rpx;
+    color: #fff;
+    margin-left: 10rpx;
+}
+.bang{
+    font-size: 26rpx;
+}
+.bang text{
+  width: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.phbListNav .naves image{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 10rpx;
+}
+.naves{
+    position: relative;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+}
+.gengxines{
+    position: absolute;
+    top: 75%;
+    font-size: 26rpx;
+    color: #fff;
+    margin-left: 10rpx;
+}
+.banges{
+    position: absolute;
+    top: 1%;
+    height: 70rpx;
+    line-height: 70rpx;
+    left: 220rpx;
+}
+.banges text{
+    width: 450rpx;
+    font-size: 28rpx;
+    display: -webkit-box;
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 3; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

@@ -1,0 +1,112 @@
+.like{
+    padding:0;
+}
+.topLike{
+    height: 420rpx;
+    background-color: #eee;
+}
+.top{
+    display: flex;
+    position: relative;
+}
+
+.top image{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 10rpx;
+    margin: 30rpx 40rpx;
+}
+.top text{
+    height: 120rpx;
+    line-height: 120rpx;
+    font-size: 30rpx;
+    color: #fff;
+}
+.situbiao{
+    display: flex;
+    position: relative;
+}
+.situbiao .iconfont{
+    flex: 1;
+    text-align: center;
+    font-size: 50rpx;
+    color: #fff;
+}
+.a{
+    position: absolute;
+    top: 95%;
+    font-size: 26rpx;
+    color: #fff;
+}
+.pl{
+    left: 70rpx;
+}
+.pl2{
+    left: 255rpx;
+}
+.pl3{
+    left: 445rpx;
+}
+.pl4{
+    left: 635rpx;
+}
+.feeter{
+    font-size: 26rpx;
+    position: relative;
+    top: -40rpx;
+    height: 100%;
+    border-radius: 50rpx;
+    background-color: rgb(253, 249, 249);
+}
+.bofang{
+    display: flex;
+    margin: 0 40rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    position: sticky;
+    top: 0;
+    height: 84rpx;
+    background-color: rgb(253, 249, 249);
+}
+.bfang , .leftLike{
+    font-size: 50rpx;
+    width: 80rpx;
+    height: 80rpx;
+    /* border: 1rpx solid red; */
+    text-align: center;
+}
+.feeterlike{
+    margin: 0 40rpx;
+    margin-bottom: 30rpx;
+    display: flex;
+}
+/* .iconfont{
+    float: right;
+} */
+.leftLike{
+    font-size: 32rpx;
+    color: rgb(224, 219, 219);
+    text-align: center;
+    height: 80rpx;
+    line-height: 80rpx;
+}
+.rigth{
+    height: 45rpx;
+    line-height: 45rpx;
+}
+.name{
+    font-size: 24rpx;
+    color:  rgb(224, 219, 219);
+    margin-right: 15rpx;
+}
+.imgTextLike{
+    position: absolute;
+    top: 60rpx;
+    left: 32%;
+    display: flex;
+}
+.imgTextLike image{
+    width: 60rpx;
+    height: 60rpx;
+    border-radius: 50%;
+}

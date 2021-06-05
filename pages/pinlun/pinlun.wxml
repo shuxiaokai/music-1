@@ -1,0 +1,27 @@
+<view class="pinlun">
+    <view class="imgText">
+        <image src="../../static/img/banner.jpg"></image>
+        <view class="name">你还要我怎样</view>
+        <text>薛之谦</text>
+    </view>
+
+    <view class="pinlunBouttom">
+        <view class="List">
+            <text>评论区</text>
+            <view class="rigth">
+                <text class="text {{navId == index? 'active': ''}}" wx:for="{{topList}}" data-index="{{index}}" bindtap="changTop">{{item}}</text>
+            </view>
+        </view>
+        <view class="Listmessage" wx:for="{{navId == 1?commentList.hotComments:commentList.comments}}">
+            <view class="message">
+            
+                <image src="{{item.user.avatarUrl}}"></image>
+                <view class="name">{{item.user.nickname}}</view>
+                <text>{{item.time}}</text>
+                <view class="iconfont icon-dianzan1"><text class="dianzhan">{{item.likedCount}}</text></view>
+            </view>
+            
+            <view class="mes">{{item.content}}</view>
+        </view>
+    </view>
+</view>

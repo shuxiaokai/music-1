@@ -1,0 +1,52 @@
+<view class="search">
+  <!-- 头部 -->
+  <view class="header">
+    <view class="searchInput">
+      <text class="iconfont icon-shousuo searchIocn"></text>
+      <input
+        type="text"
+        bindinput="changInput"
+        placeholder-class="placeholder"
+        placeholder="{{placSearch}}"
+      />
+    </view>
+    <text class="cancel" bindtap="changQuxiao">取消</text>
+  </view>
+
+  <!-- 搜索 -->
+  <black wx:if="{{searchList.length}}">
+    <view class="shouSearch">
+      <view class="Search">搜索内容:{{searchData}}</view>
+      <view class="searchList">
+        <view class="searchItem" wx:for="{{searchList}}" wx:key="id">
+          <text class="iconfont icon-shousuo"></text>
+          <text class="content">{{item.name}}</text>
+        </view>
+      </view>
+    </view>
+  </black>
+
+  <black wx:else>
+  <!--历史 -->
+  <view class="histort">
+    <view class="title">历史</view>
+    <view class="histortItem" wx:for="{{histortList}}" wx:key="{{item}}">
+    {{item}}
+    </view>
+    <text class="iconfont icon-lajitong detele"></text>
+  </view>
+    <!-- 热搜榜 -->
+    <view class="reshou">
+      <view class="title">热搜榜</view>
+      <!-- 列表 -->
+      <view class="hotlist" wx:for="{{hostListL}}" wx:key="searchWord" id="id" bindtap="changIndex">
+        <view class="hostItem">
+          <text class="order">{{index + 1}}</text>
+          <text>{{item.searchWord}}</text>
+          <image src="{{item.iconUrl}}"></image>
+        </view>
+      </view>
+    </view>
+
+  </black>
+</view>

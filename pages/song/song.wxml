@@ -1,0 +1,29 @@
+<view class="topSong">
+  <!-- 头部 -->
+  <view class="header">
+    <image src="/static/img/heiban.jpg" />
+    <view class="date">
+      <text class="day">{{day}} / </text>
+      <text class="month">{{month}}</text>
+    </view>
+  </view>
+
+  <!-- 列表 -->
+  <view class="listHeader">
+    <view class="list">
+      <text>播放全部</text>
+      <text class="changMore">多选</text>
+    </view>
+    <!-- 内容 -->
+    <scroll-view scroll-y class="listDcroll">
+      <view class="scroll" wx:for="{{songList}}" wx:key="id" data-index="{{index}}" data-song="{{item}}" bindtap="toSongDateil">
+        <image src="{{item.al.picUrl}}" />
+        <view class="muiseInfo">
+          <text class="muise">{{item.name}}</text>
+          <text class="muisename" wx:for="{{item.ar}}" wx:for-item="item2">{{item2.name}}</text>
+        </view>
+        <text class="iconfont icon-gengduo"></text>
+      </view>
+    </scroll-view>
+  </view>
+</view>

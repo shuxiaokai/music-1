@@ -1,0 +1,39 @@
+.tuijian{
+    height: 80rpx;
+    line-height: 80rpx;
+    margin-left: 20rpx;
+    font-size: 35rpx;
+}
+/* pages/phb/phb.wxss */
+.phb{
+    padding: 0 20rpx;
+}
+
+.phbList{
+    display: flex;
+    position: relative;
+}
+.nav{
+    margin: 0 20rpx;
+}
+.nav image{
+    width: 200rpx;
+    height: 200rpx;
+    /* margin: 0 20rpx; */
+    border-radius: 10rpx;
+}
+.gengxin{
+    position: absolute;
+    top: 64%;
+    font-size: 26rpx;
+    color: #fff;
+    margin-left: 10rpx;
+}
+.bang{
+    font-size: 26rpx;
+}
+.bang text{
+  width: 20rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

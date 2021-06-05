@@ -1,0 +1,45 @@
+<view class="phb">
+  <phb tuijian="榜单推荐"></phb>
+  <view class="phbList">
+    <view class="nav" wx:for="{{topdetailList}}" wx:key="id">
+      <image src="{{item.coverImgUrl}}" />
+      <view class="gengxin">{{item.updateFrequency}}</view>
+      <view class="bang">
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+
+  <phb tuijian="官方榜"></phb>
+  <view class="phbListNav">
+    <view class="naves" wx:for="{{topdetailgaun}}" wx:key="id">
+      <image src="{{item.coverImgUrl}}" />
+      <view class="gengxines">{{item.updateFrequency}}</view>
+      <view class="banges">
+        <text  wx:for="{{item.tracks}}" wx:key="" wx:for-item="item2" wx:for-index="index2">{{index2 + 1}}. {{item2.first}} - {{item2.second}}</text>
+      </view>
+    </view>
+  </view>
+
+  <phb tuijian="精选榜"></phb>
+  <view class="phbList">
+    <view class="nav" wx:for="{{topdetailjxuan}}" wx:key="id">
+      <image src="{{item.coverImgUrl}}" />
+      <view class="geng">{{item.updateFrequency}}</view>
+      <view class="bang">
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+
+  <phb tuijian="曲风榜"></phb>
+  <view class="phbList">
+    <view class="nav" wx:for="{{topdetailqufeng}}" wx:key="id">
+      <image src="{{item.coverImgUrl}}" />
+      <view class="geng">{{item.updateFrequency}}</view>
+      <view class="bang">
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</view>

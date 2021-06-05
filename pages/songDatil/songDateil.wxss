@@ -1,0 +1,114 @@
+.songDateil{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.discList{
+    position: relative;
+    /* left: 50%; */
+    margin-top: 120rpx;
+    width: 598rpx;
+    height: 598rpx;
+}
+.discAiamin{
+    animation: disc 20s linear infinite;
+}
+/* @keyframes设置动画帧 百分比 */
+@keyframes disc{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.discList .disc{
+    width: 598rpx;
+    height: 598rpx;
+}
+.muisediscList{
+    width: 450rpx;
+    height: 450rpx;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.musicCon{
+    width: 100%;
+    display: flex;
+    bottom: 40rpx;
+    position: absolute;
+    left: 0;
+    border-top: 1rpx solid #fff ;
+}
+.musicCon text{
+    width: 20%;
+    height: 120rpx;
+    line-height: 120rpx;
+    text-align: center;
+    color: #fff;
+    font-size: 50rpx;
+}
+.musicCon .big{
+    font-size: 80rpx;
+}
+.musicCon .bigs{
+    font-size: 45rpx;
+}
+
+/* 进度条 */
+.pro{
+    width: 640rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    display: flex;
+    position: absolute;
+    bottom: 200rpx;
+}
+.bar{
+    position: relative;
+    width: 450rpx;
+    height: 4rpx;
+    background:rgba(0, 0, 0, 0.4);
+    margin: auto;
+}
+.audio{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* width: 100rpx; */
+    height: 4rpx;
+    background-color: red;
+}
+
+.audioes{
+    width: 12rpx;
+    height: 12rpx;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    right: -12rpx;
+    top: -6rpx;
+}
+.pro text{
+    font-size: 26rpx;
+    margin: 0 10rpx;
+}
+.san{
+    margin-top: 60rpx;
+    display: flex;
+    flex: 1;
+}
+.san text{
+    margin: 40rpx;
+}

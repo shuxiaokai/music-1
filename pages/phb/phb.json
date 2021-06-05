@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "phb":"../../components/phb/phb"
+  }
+}

@@ -1,0 +1,53 @@
+{
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
+        },
+        "game": {
+            "list": []
+        },
+        "gamePlugin": {
+            "list": []
+        },
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "pages/profile/profile",
+                    "pathName": "pages/profile/profile",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "歌单",
+                    "pathName": "pages/gedan/gedan",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/like/like",
+                    "pathName": "pages/like/like",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/songDatil/songDateil",
+                    "pathName": "pages/songDatil/songDateil",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/song/song",
+                    "pathName": "pages/song/song",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/pinlun/pinlun",
+                    "pathName": "pages/pinlun/pinlun",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}

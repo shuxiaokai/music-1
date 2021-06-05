@@ -1,0 +1,26 @@
+<view class="video">
+    <!-- 头部 -->
+    <view class="header">
+        <image src="/static/icon/voide .png"></image>
+        <input type="text" class="input" placeholder="搜索" bindtap="changInput"/>
+        <image src="/static/icon/网易云.png"></image>
+    </view>
+
+    <!-- 导航 -->
+    <scroll-view scroll-x enable-flex class="navScroll">
+        <view class="item" wx:for="{{videoGroupList}}" wx:key="id">
+            <view class="navItem {{navId == item.id ? 'active' : ''}}" bindtap="changNav" id="{{item.id}}">
+                {{item.name}}
+            </view>
+        </view>
+    </scroll-view>  
+
+    <!-- <block wx:if="{{item.data.urlInfo.url}}"> -->
+        <scroll-view scroll-y class="videoScroll">
+        <view class="videoItem" wx:for="{{videoList}}" wx:key="id">
+            <video src="{{item.data.urlInfo.url}}"></video>
+            <view class="videoname">{{item.data.title}}</view>
+        </view>    
+    </scroll-view>
+    <!-- </block> -->
+</view>

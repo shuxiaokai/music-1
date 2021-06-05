@@ -1,0 +1,167 @@
+.topCenter .dhlan{
+  display: flex;
+  height: 100rpx;
+}
+.topCenter .dhlan text{
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+  flex: 1;
+  text-align: center;
+}
+.topCenter .dhlan .center{
+  margin: 30rpx 200rpx 30rpx 200rpx;
+}
+.topCenter .dhlan .rigth{
+  margin-right: 20rpx;
+}
+/* <!-- 个人信息 --> */
+.geren{
+  margin: 0 30rpx;
+  /* display: flex; */
+  height: 180rpx;
+  background-color: #fbfbfb;
+}
+.geren .topListes .text .title{
+  font-size: 40rpx;
+  margin-left: 60rpx;
+}
+.geren .topListes .text .rigth{
+  float: right;
+  margin-right: 50rpx;
+  font-size: 40rpx;
+}
+.geren .topListes .text text{
+  line-height: 180rpx;
+
+}
+.geren image{
+  margin-top: 28rpx;
+  float: left;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+/* 五个图标 */
+.navIndex{
+    display: flex;
+  }
+  .navItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    justify-content: center;
+  }
+  .navItem .iconfont{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100rpx;
+    background-color: rgb(240, 19, 19);
+    color: #fff;
+    font-size: 50rpx;
+    margin: 20rpx 0;
+  }
+  .navItem text{
+    font-size: 26rpx;
+  }
+
+  .top{ 
+    margin-top: 30rpx;
+      width: 100%;
+      font-size: 26rpx;
+    }
+    .top .nav-item .iconfont{
+      margin-left: 35rpx;
+    }
+  .top .nav-item text{
+   margin: 0 20rpx;
+  }
+  .top .nav-item {
+    margin-top: 50rpx;
+    width: 100%;
+    height: 60rpx;
+    border-bottom: 2rpx solid #eee;
+  }
+  
+
+.baise{ 
+  /* margin-top: 30rpx;
+    height: 100%;
+    width: 100%; */
+    display: flex;
+  }
+  .baise .nav-item .iconfont{
+    margin-left: 35rpx;
+  }
+.baise .nav-item text{
+ margin: 0 25rpx;
+}
+.baise .nav-item {
+  margin-top: 30rpx;
+  width: 100%;
+  height: 300rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.baise .nav-item .title{
+  font-size: 26rpx;
+}
+
+/* 最近播放记录 */
+.zuijnbf{
+  margin-top: 20rpx;
+  display: flex;
+  text-align: center;
+  height: 300rpx;
+}
+.zuijnbf .item image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 20rpx;
+  margin-left: 30rpx;
+}
+.zuijnbf .item  text{
+  font-size: 30rpx;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.zhanshi{
+  margin: 50rpx 60rpx;
+}
+.zuijinName{
+  font-size: 26rpx;
+}
+
+.like{
+  margin: 20rpx 25rpx;
+  margin-top: 10rpx;
+  /* width: 100%; */
+  height: 210rpx;
+  border: 1rpx solid rgb(253, 249, 249);
+  border-radius: 10rpx;
+}
+
+.likeList image{
+  width: 150rpx;
+  height: 150rpx;
+  margin: 30rpx;
+  border-radius: 10rpx;
+}
+.likeList{
+  display: flex;
+  /* background-color: rgb(253, 249, 249); */
+}
+.likeItem{
+  margin: 50rpx 20rpx;
+  font-size: 26rpx;
+}
+.likeItem view{
+  font-size: 24rpx;
+  color: #eee;
+}
+.sou{
+  font-size: 24rpx;
+  color: #eee;
+}

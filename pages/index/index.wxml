@@ -1,0 +1,72 @@
+<view class="index">
+  <!-- 轮播图 -->
+  <swiper class="banner" interval="2000" autoplay circular duration="500" indicator-dots indicator-color="ivory" indicator-active-color="#d43c33">
+    <swiper-item wx:for="{{bannerList}}" wx:key="bannerId">
+      <image mode="widthFix" src="{{item.pic}}" alt />
+    </swiper-item>
+  </swiper>
+
+  <!-- 五个图标 -->
+  <view class="navIndex">
+    <view class="navItem">
+      <text class="iconfont icon-meirituijian" bindtap="changTuijian"></text>
+      <text>每日推荐</text>
+    </view>
+    <view class="navItem">
+      <text class="iconfont icon-gedan"></text>
+      <text>歌单</text>
+    </view>
+    <view class="navItem">
+      <text class="iconfont icon-tubiaozhizuomoban1" bindtap="changphb"></text>
+      <text>排行榜</text>
+    </view>
+    <view class="navItem">
+      <text class="iconfont icon-ttpodicon"></text>
+      <text>电台</text>
+    </view>
+    <view class="navItem">
+      <text class="iconfont icon-zhibobofangshexiangjitianxianxianxing"></text>
+      <text>直播</text>
+    </view>
+  </view>
+
+  <!-- 歌曲推荐 -->
+  <view class="navgequ">
+    <!-- 头部 -->
+    <navheader title="推荐歌曲" nav="为你精心推荐"></navheader>
+
+    <!-- 内容区 -->
+    <scroll-view class="scrollItem" enable-flex scroll-x>
+      <view class="scroll" wx:for="{{recommendList}}" wx:key="id">
+        <image src="{{item.picUrl}}" />
+        <text>{{item.name}}</text>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- 排行榜 -->
+  <view class="topList">
+    <!-- 头部 -->
+    <navheader title="排行榜" nav="热歌风向标"></navheader>
+    <!-- 内容 -->
+    <swiper class="topListswiper" circular next-margin="50rpx" previous-margin="50rpx">
+      <swiper-item class="topSwiper" 
+      wx:for="{{topList}}"
+      wx:key="name"
+      >
+        <view class="SwiperItem">
+          <view class="title">{{item.name}}</view>
+          <view class="musuise" 
+          wx:for="{{item.tracks}}"
+          wx:key="id"
+          wx:for-item="musuise"
+          >
+            <!--<image src="{{musuise.al.picUrl}}" />-->
+            <text class="count">{{index + 1}}</text>
+            <text class="countname">{{musuise.first}} - {{musuise.second}}</text>
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>

@@ -1,0 +1,75 @@
+.topSong .header{
+    position: relative;
+    width: 100%;
+    height: 300rpx;
+}
+.topSong .header image{
+    width: 100%;
+    height: 100%;
+}
+.topSong .header .date{
+    margin-left: -150rpx;
+    margin-top: -50rpx;
+    width: 300rpx;
+    height: 100rpx;
+    text-align: center;
+    line-height: 100rpx;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 60rpx;
+    color: #fff;
+}
+
+/* 列表 */
+.listHeader{
+    position: relative;
+    top: -20rpx;
+    padding: 0 20rpx;
+    border-radius: 30rpx;
+    background: #fff;
+}
+.list{
+    height: 80rpx;
+    line-height: 80rpx;
+}
+.listHeader .list .changMore{
+    float: right;
+}
+
+
+.listDcroll{
+    height: calc(100vh - 380rpx);
+}
+.scroll{
+    position: relative;
+    display: flex;
+    margin-bottom: 20rpx;
+}
+.listDcroll .scroll image{
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 8rpx;
+}
+.muiseInfo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rpx;
+}
+.muiseInfo text{
+    height: 40rpx;
+    line-height: 40rpx;
+    font-size: 24rpx;
+    max-width: 500rpx;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.scroll .iconfont{
+    position: absolute;
+    width: 80rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    right: 0;
+    text-align: right;
+}

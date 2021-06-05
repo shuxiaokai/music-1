@@ -1,0 +1,22 @@
+
+<view class="container">
+    <view class="wiapper">
+        <view class="welcome">欢迎回来!</view>
+        <view class="input-content">
+            <view class="input-item">
+                <text class="title">手机号码</text>
+                <input type="text" placeholder="请输入手机号码" data-type="phone" id="phone" bindinput="handInput"/>
+            </view>
+            <view class="input-item">
+                <text class="title">密码</text>
+                <input type="password" placeholder="请输入密码" data-type="password" id="password" bindinput="handInput"/>
+            </view>
+        </view>
+        <button class="btn" bindtap="login">登录</button>
+        <view class="section">忘记密码？</view>
+    </view>
+    <view class="zhao">
+        还没有账号？
+        <text>立即注册</text>
+    </view>
+</view>

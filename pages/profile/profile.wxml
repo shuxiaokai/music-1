@@ -1,0 +1,69 @@
+<view class="topCenter">
+  <!-- 头部导航栏 -->
+  <view class="dhlan">
+    <text class="a iconfont icon-gengduo left"></text>
+    <text class="center">我的</text>
+    <text class="a iconfont icon-shousuo rigth"></text>
+  </view>
+  <!-- 个人信息 -->
+  <view class="geren">
+    <view class="topListes" bindtap="toLogin">
+      <image src="{{userInfo.avatarUrl?userInfo.avatarUrl:'/static/img/banner.jpg'}}" />
+      <view class="text">
+        <text class="title">{{userInfo.nickname?userInfo.nickname:'名字'}}</text>
+        <text class="rigth">></text>
+      </view>
+    </view>
+  </view>
+  <!-- 五个图标 -->
+  <view class="navIndex">
+    <view class="navItem">
+      <text class="iconfont icon-meirituijian"></text>
+      <text>每日推荐</text>
+    </view>
+    <view class="navItem">
+      <text class="iconfont icon-gedan"></text>
+      <text>歌单</text>
+    </view>
+    <view class="navItem">
+      <text class="iconfont icon-tubiaozhizuomoban1"></text>
+      <text>排行榜</text>
+    </view>
+    <view class="navItem">
+      <text class="iconfont icon-ttpodicon"></text>
+      <text>电台</text>
+    </view>
+    <view class="navItem">
+      <text class="iconfont icon-zhibobofangshexiangjitianxianxianxing"></text>
+      <text>直播</text>
+    </view>
+  </view>
+</view>
+
+<view class="top">
+    <view class="nav-item" bindtap="changLike">
+    <text class="iconfont icon-bendiyinle"></text>
+    <text class="title">我喜欢的音乐 <text class="sou">(共 {{likeLength}} 首)</text></text>
+  </view>
+  <view class="nav-item">
+    <text class="iconfont icon-shoucang"></text>
+    <text class="title">我的收藏</text>
+  </view>
+  <view class="nav-item">
+    <text class="iconfont icon-xiazai"></text>
+    <text class="title">下载管理</text>
+  </view>
+</view>
+<view class="baise">
+  <view class="nav-item">
+    <text class="iconfont icon-jiashimoshizuijinbofang"></text>
+    <text class="title">最近播放</text>
+    <scroll-view wx:if="{{recenProfile.length}}" scroll-x class="zuijnbf" enable-flex>
+      <view class="item" wx:for="{{recenProfile}}" wx:key="{{id}}">
+        <image src="{{item.song.al.picUrl}}" />
+      </view>
+    </scroll-view>
+    <view wx:else class="zhanshi">暂时没有播放记录</view>
+  </view>
+</view>
+    

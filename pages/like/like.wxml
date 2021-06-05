@@ -1,0 +1,46 @@
+<view class="like">
+  <view class="topLike">
+    <view class="top">
+      <image src="{{likeListes.coverImgUrl}}" />
+      <text>我喜欢的音乐</text>
+      <view class="imgTextLike">
+        <image src="{{userInfo.avatarUrl}}"></image>
+        <text>{{likeListes.name}}</text>
+      </view>
+    </view>
+
+    <view class="situbiao">
+      <text class="iconfont icon-iconfont-">
+        <text class="a pl">评论</text>
+      </text>
+      <text class="iconfont icon-fenxiang">
+        <text class="a pl2">分享</text>
+      </text>
+      <text class="iconfont icon-xiazai">
+        <text class="a pl3">下载</text>
+      </text>
+      <text class="iconfont icon-xuanze">
+        <text class="a pl4">多选</text>
+      </text>
+    </view>
+  </view>
+
+  <view class="feeter">
+    <view class="bofang">
+      <text class="iconfont icon-quanbubofang_48 bfang"></text>
+      <view>
+        全部播放
+        <text class="duosshou">(共 {{likeListes.trackCount}} 首)</text>
+      </view>
+    </view>
+
+    <view class="feeterlike" wx:for="{{likeListes.tracks}}" data-likeId="{{likeListes.trackIds[index].id}}" bindtap="changLike">
+      <text class="leftLike">{{index + 1}}</text>
+      <view class="rigth">
+        <view>{{item.name}}</view>
+        <text class="name" wx:for="{{item.ar}}" wx:for-item="item2">{{item2.name}}</text>
+      </view>
+    </view>
+
+  </view>
+</view>
